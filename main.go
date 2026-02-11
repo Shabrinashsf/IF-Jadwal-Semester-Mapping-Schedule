@@ -62,9 +62,6 @@ func main() {
 	hariList := []string{"SENIN", "SELASA", "RABU", "KAMIS", "JUMAT"}
 	currentHari := ""
 
-	// Regex untuk detect baris nama matkul
-	prodiRegex := regexp.MustCompile(`^(IF|IUP|RKA|RPL|S3)_(.+)$`)
-
 	// Mulai dari baris ke-2 (index 1)
 	for rowIdx := 1; rowIdx < len(rows); rowIdx++ {
 		row := rows[rowIdx]
@@ -100,10 +97,8 @@ func main() {
 				continue
 			}
 
-			// Cek apakah ini baris nama matkul (format: PRODI_NamaMatkul)
-			if !prodiRegex.MatchString(cellValue) {
-				continue // Skip jika bukan baris nama matkul
-			}
+			// Cek apakah ini baris nama matkul
+			// Jika sesuai format PRODI_NamaMatkul atau hanya nama matkul (akan jadi S2)
 
 			// Ini baris nama matkul, ambil baris berikutnya untuk info sem/dosen/sks
 			semInfo := ""
@@ -337,6 +332,10 @@ func parseJadwal(hari, jam, ruangan, matkulCell, semInfoCell, rawData string) Ja
 	if len(prodiMatch) == 3 {
 		jadwal.Prodi = prodiMatch[1]
 		jadwal.MataKuliah = strings.TrimSpace(prodiMatch[2])
+	} else {
+		// Jika tidak sesuai format standar, anggap sebagai mata kuliah S2
+		jadwal.Prodi = "S2"
+		jadwal.MataKuliah = strings.TrimSpace(matkulCell)
 	}
 
 	// Parse baris 2: Sem X / KODE_DOSEN / Y SKS
