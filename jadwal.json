@@ -432,6 +432,17 @@
       },
       {
         "hari": "SELASA",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IF \u0026 RKA\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "SELASA",
         "jam": "13.30 - 15.20",
         "ruangan": "IF-101 (kapasitas 50)",
         "prodi": "IF",
@@ -861,6 +872,17 @@
       },
       {
         "hari": "RABU",
+        "jam": "15.30 - 16.20",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
         "jam": "15.30 - 17.20",
         "ruangan": "IF-102 (kapasitas 50)",
         "prodi": "IF",
@@ -982,6 +1004,39 @@
       },
       {
         "hari": "KAMIS",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IF \u0026 RKA\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "KEWARGANEGARAAN",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWARGANEGARAAN - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
         "jam": "13.30 - 15.20",
         "ruangan": "IF-104 (kapasitas 50)",
         "prodi": "IF",
@@ -1012,6 +1067,17 @@
         "kode_dosen": "HM",
         "sks": "3",
         "raw_data": "IF_Probabilitas dan Statistik E\nSem 4 / HM / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "15.30 - 16.20",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "AGAMA ISLAM",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "AGAMA ISLAM - IF \u0026 RKA\n3 SKS / SEM 6"
       },
       {
         "hari": "KAMIS",
@@ -1083,6 +1149,17 @@
       },
       {
         "hari": "SELASA",
+        "jam": "09.00 - 09.50",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IUP\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "SELASA",
         "jam": "10.00 - 11.50",
         "ruangan": "IF-101 (kapasitas 50)",
         "prodi": "IUP",
@@ -1091,6 +1168,17 @@
         "kode_dosen": "MK",
         "sks": "3",
         "raw_data": "IUP_Pembelajaran Mesin IUP I\nSem 4 / MK / 3 SKS"
+      },
+      {
+        "hari": "SELASA",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "Kewirausahaan Berbasis Teknologi",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "Kewirausahaan Berbasis Teknologi - IUP\n3 SKS / SEM 6"
       },
       {
         "hari": "SELASA",
@@ -1160,6 +1248,28 @@
       },
       {
         "hari": "RABU",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - IUP\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - IUP\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
         "jam": "15.30 - 17.20",
         "ruangan": "IF-108 (kapasitas 40)",
         "prodi": "IUP",
@@ -1168,6 +1278,39 @@
         "kode_dosen": "HM",
         "sks": "2",
         "raw_data": "IUP_Otomata IUP I\nSem 4 / HM / 2 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "08.00 - 08.50",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IUP\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "08.00 - 08.50",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "KEWARGANEGARAAN",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWARGANEGARAAN - IUP\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "10.00 - 10.50",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "AGAMA ISLAM",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "AGAMA ISLAM - IUP\n3 SKS / SEM 6"
       },
       {
         "hari": "KAMIS",
@@ -1261,6 +1404,17 @@
       },
       {
         "hari": "SELASA",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IF \u0026 RKA\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "SELASA",
         "jam": "13.30 - 15.20",
         "ruangan": "IF-103 (kapasitas 50)",
         "prodi": "RKA",
@@ -1315,6 +1469,17 @@
         "raw_data": "RKA_Deep Learning N\nSem 4 / DA, AI / 3 SKS"
       },
       {
+        "hari": "RABU",
+        "jam": "15.30 - 16.20",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
         "hari": "KAMIS",
         "jam": "07.00 - 08.50",
         "ruangan": "IF-113 / Ruang PIKTI\n(Kapasitas 50)",
@@ -1327,6 +1492,39 @@
       },
       {
         "hari": "KAMIS",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IF \u0026 RKA\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "KEWARGANEGARAAN",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWARGANEGARAAN - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
         "jam": "13.30 - 15.20",
         "ruangan": "IF-102 (kapasitas 50)",
         "prodi": "RKA",
@@ -1335,6 +1533,17 @@
         "kode_dosen": "SR, MA",
         "sks": "3",
         "raw_data": "RKA_Konsep Pengembangan dan Perancangan Perangkat Lunak N\nSem 4 / SR, MA / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "15.30 - 16.20",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "AGAMA ISLAM",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "AGAMA ISLAM - IF \u0026 RKA\n3 SKS / SEM 6"
       },
       {
         "hari": "KAMIS",
@@ -1450,6 +1659,28 @@
       },
       {
         "hari": "RABU",
+        "jam": "07.00 - 07.50",
+        "ruangan": "",
+        "prodi": "RPL",
+        "mata_kuliah": "KEWARGANEGARAAN",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWARGANEGARAAN - RPL\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
+        "jam": "09.00 - 09.50",
+        "ruangan": "",
+        "prodi": "RPL",
+        "mata_kuliah": "AGAMA ISLAM",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "AGAMA ISLAM - RPL\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
         "jam": "10.00 - 11.50",
         "ruangan": "IF-104 (kapasitas 50)",
         "prodi": "RPL",
@@ -1458,6 +1689,17 @@
         "kode_dosen": "ST",
         "sks": "3",
         "raw_data": "RPL_Analisis dan Perancangan Sistem Informasi M\nSem 4 / ST / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "RPL",
+        "mata_kuliah": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI - RPL\n3 SKS / SEM 6"
       },
       {
         "hari": "KAMIS",
@@ -1513,6 +1755,17 @@
         "kode_dosen": "DO",
         "sks": "3",
         "raw_data": "RPL_Rekayasa Kebutuhan M\nSem 2 / DO / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "09.00 - 09.50",
+        "ruangan": "",
+        "prodi": "RPL",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - RPL\n3 SKS / SEM 6"
       }
     ],
     "S2": [
@@ -5519,6 +5772,17 @@
       },
       {
         "hari": "SELASA",
+        "jam": "09.00 - 09.50",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IUP\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "SELASA",
         "jam": "10.00 - 11.50",
         "ruangan": "IF-112 (PASCASARJANA)\n(kapasitas 50)",
         "prodi": "S2",
@@ -5538,6 +5802,28 @@
         "kode_dosen": "RJ",
         "sks": "3",
         "raw_data": "RPL_Pemrograman Berorientasi Objek M\nSem 2 / RJ / 3 SKS"
+      },
+      {
+        "hari": "SELASA",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IF \u0026 RKA\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "SELASA",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IF \u0026 RKA\n3 SKS / SEM 2"
       },
       {
         "hari": "SELASA",
@@ -5761,6 +6047,17 @@
       },
       {
         "hari": "KAMIS",
+        "jam": "08.00 - 08.50",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IUP\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "KAMIS",
         "jam": "10.00 - 11.50",
         "ruangan": "IF-102 (kapasitas 50)",
         "prodi": "RPL",
@@ -5769,6 +6066,28 @@
         "kode_dosen": "BA, IG",
         "sks": "3",
         "raw_data": "RPL_Komputasi Numerik M\nSem 2 / BA, IG / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IF \u0026 RKA\n3 SKS / SEM 2"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "KALKULUS 2",
+        "semester": "2",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KALKULUS 2 - IF \u0026 RKA\n3 SKS / SEM 2"
       },
       {
         "hari": "KAMIS",
@@ -6746,6 +7065,17 @@
       },
       {
         "hari": "SELASA",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "Kewirausahaan Berbasis Teknologi",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "Kewirausahaan Berbasis Teknologi - IUP\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "SELASA",
         "jam": "13.30 - 15.20",
         "ruangan": "IF-101 (kapasitas 50)",
         "prodi": "IF",
@@ -6801,6 +7131,17 @@
       },
       {
         "hari": "RABU",
+        "jam": "07.00 - 07.50",
+        "ruangan": "",
+        "prodi": "RPL",
+        "mata_kuliah": "KEWARGANEGARAAN",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWARGANEGARAAN - RPL\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
         "jam": "07.00 - 08.50",
         "ruangan": "IF-102 (kapasitas 50)",
         "prodi": "IF",
@@ -6820,6 +7161,17 @@
         "kode_dosen": "AY",
         "sks": "3",
         "raw_data": "IF_Interaksi Manusia dan Komputer B\nSem 6 / AY / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "09.00 - 09.50",
+        "ruangan": "",
+        "prodi": "RPL",
+        "mata_kuliah": "AGAMA ISLAM",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "AGAMA ISLAM - RPL\n3 SKS / SEM 6"
       },
       {
         "hari": "RABU",
@@ -6867,6 +7219,39 @@
       },
       {
         "hari": "RABU",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "RPL",
+        "mata_kuliah": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI - RPL\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - IUP\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - IUP\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
         "jam": "13.30 - 15.20",
         "ruangan": "IF-107 (kapasitas 80)",
         "prodi": "IF",
@@ -6910,6 +7295,28 @@
         "raw_data": "IF_Audit Sistem T\nSem 6 / RS / 3 SKS"
       },
       {
+        "hari": "RABU",
+        "jam": "15.30 - 16.20",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "RABU",
+        "jam": "15.30 - 16.20",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWIRAUSAHAAN BERBASIS TEKNOLOGI - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
         "hari": "KAMIS",
         "jam": "07.00 - 08.50",
         "ruangan": "IF-101 (kapasitas 50)",
@@ -6919,6 +7326,105 @@
         "kode_dosen": "JL",
         "sks": "3",
         "raw_data": "IF_Simulasi Sistem Dinamis T\nSem 6 / JL / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "08.00 - 08.50",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "KEWARGANEGARAAN",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWARGANEGARAAN - IUP\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "10.00 - 10.50",
+        "ruangan": "",
+        "prodi": "IUP",
+        "mata_kuliah": "AGAMA ISLAM",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "AGAMA ISLAM - IUP\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "11.00 - 11.50",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "KEWARGANEGARAAN",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWARGANEGARAAN - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "13.30 - 14.20",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "KEWARGANEGARAAN",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "KEWARGANEGARAAN - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "15.30 - 16.20",
+        "ruangan": "",
+        "prodi": "IF",
+        "mata_kuliah": "AGAMA ISLAM",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "AGAMA ISLAM - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "15.30 - 16.20",
+        "ruangan": "",
+        "prodi": "RKA",
+        "mata_kuliah": "AGAMA ISLAM",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "AGAMA ISLAM - IF \u0026 RKA\n3 SKS / SEM 6"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "09.00 - 09.50",
+        "ruangan": "",
+        "prodi": "RPL",
+        "mata_kuliah": "BAHASA INGGRIS",
+        "semester": "6",
+        "kode_dosen": "",
+        "sks": "3",
+        "raw_data": "BAHASA INGGRIS - RPL\n3 SKS / SEM 6"
       },
       {
         "hari": "KAMIS",

@@ -90,6 +90,46 @@ func main() {
 			continue
 		}
 
+		// Kolom C-F (index 2-5): Parse SKPB Reguler dan SKPB IUP
+		for colIdx := 2; colIdx <= 5; colIdx++ {
+			cellValue := ""
+			if colIdx < len(row) {
+				cellValue = strings.TrimSpace(row[colIdx])
+			}
+			if cellValue == "" {
+				continue
+			}
+
+			// Ambil info SKS/SEM dari baris berikutnya
+			infoCell := ""
+			if rowIdx+1 < len(rows) {
+				nextRow := rows[rowIdx+1]
+				if colIdx < len(nextRow) {
+					infoCell = strings.TrimSpace(nextRow[colIdx])
+				}
+			}
+
+			// Parse SKPB dan dapatkan list jadwal (bisa multiple prodi)
+			rawData := cellValue + "\n" + infoCell
+			jadwalSKPBList := parseSKPB(currentHari, jamBaris1, "", cellValue, infoCell, rawData)
+
+			for _, jadwal := range jadwalSKPBList {
+				if jadwal.MataKuliah != "" {
+					semuaJadwal = append(semuaJadwal, jadwal)
+
+					// Group by semester
+					if jadwal.Semester != "" {
+						jadwalBySemester[jadwal.Semester] = append(jadwalBySemester[jadwal.Semester], jadwal)
+					}
+
+					// Group by prodi
+					if jadwal.Prodi != "" {
+						jadwalByProdi[jadwal.Prodi] = append(jadwalByProdi[jadwal.Prodi], jadwal)
+					}
+				}
+			}
+		}
+
 		// Kolom G ke atas (index 6+): Data mata kuliah per ruangan
 		for colIdx := 6; colIdx < len(row); colIdx++ {
 			cellValue := strings.TrimSpace(row[colIdx])
@@ -365,4 +405,74 @@ func parseJadwal(hari, jam, ruangan, matkulCell, semInfoCell, rawData string) Ja
 	}
 
 	return jadwal
+}
+
+// parseSKPB mengekstrak informasi dari cell SKPB
+// Format mata kuliah: "KALKULUS 2 - IF & RKA" (bisa multiple prodi dipisah &)
+// Format info: "3 SKS / SEM 2"
+// Mengembalikan slice JadwalKuliah karena bisa ada multiple prodi
+func parseSKPB(hari, jam, ruangan, skpbCell, infoCell, rawData string) []JadwalKuliah {
+	var jadwalList []JadwalKuliah
+
+	if strings.TrimSpace(skpbCell) == "" {
+		return jadwalList
+	}
+
+	// Parse baris 1: MataKuliah - Prodi1 & Prodi2 ...
+	parts := strings.Split(skpbCell, "-")
+	if len(parts) < 2 {
+		return jadwalList
+	}
+
+	mataKuliah := strings.TrimSpace(parts[0])
+	prodiPart := strings.TrimSpace(parts[1])
+
+	// Split prodi yang dipisahkan dengan &
+	prodis := strings.Split(prodiPart, "&")
+
+	// Parse baris 2: SKS / SEM
+	var sks, semester string
+	if infoCell != "" {
+		infoParts := strings.Split(infoCell, "/")
+		if len(infoParts) >= 2 {
+			// Part 1: SKS (format: "3 SKS")
+			sksPart := strings.TrimSpace(infoParts[0])
+			sksRegex := regexp.MustCompile(`(\d+)\s*SKS`)
+			sksMatch := sksRegex.FindStringSubmatch(sksPart)
+			if len(sksMatch) > 1 {
+				sks = sksMatch[1]
+			}
+
+			// Part 2: SEM (format: "SEM 2")
+			semPart := strings.TrimSpace(infoParts[1])
+			semRegex := regexp.MustCompile(`(?i)sem\s*(\d+)`)
+			semMatch := semRegex.FindStringSubmatch(semPart)
+			if len(semMatch) > 1 {
+				semester = semMatch[1]
+			}
+		}
+	}
+
+	// Buat jadwal untuk setiap prodi
+	for _, prodi := range prodis {
+		prodi = strings.TrimSpace(prodi)
+		if prodi == "" {
+			continue
+		}
+
+		jadwal := JadwalKuliah{
+			Hari:       hari,
+			Jam:        jam,
+			Ruangan:    ruangan,
+			Prodi:      prodi,
+			MataKuliah: mataKuliah,
+			Semester:   semester,
+			SKS:        sks,
+			RawData:    rawData,
+		}
+
+		jadwalList = append(jadwalList, jadwal)
+	}
+
+	return jadwalList
 }
