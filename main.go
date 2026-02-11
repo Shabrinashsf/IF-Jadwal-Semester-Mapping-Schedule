@@ -63,7 +63,7 @@ func main() {
 	currentHari := ""
 
 	// Regex untuk detect baris nama matkul
-	prodiRegex := regexp.MustCompile(`^(IF|IUP|RKA|RPL)_(.+)$`)
+	prodiRegex := regexp.MustCompile(`^(IF|IUP|RKA|RPL|S3)_(.+)$`)
 
 	// Mulai dari baris ke-2 (index 1)
 	for rowIdx := 1; rowIdx < len(rows); rowIdx++ {
@@ -189,14 +189,14 @@ func main() {
 
 	// Export ke file Excel
 	fmt.Println("\n=== EXPORT KE EXCEL ===")
-	err = exportToExcel(jadwalBySemester, jadwalByProdi)
+	err = exportToExcel(jadwalByProdi)
 	if err != nil {
 		log.Fatalf("Gagal export ke Excel: %v", err)
 	}
 }
 
 // exportToExcel menulis data ke file Excel lokal
-func exportToExcel(jadwalBySemester, jadwalByProdi map[string][]JadwalKuliah) error {
+func exportToExcel(jadwalByProdi map[string][]JadwalKuliah) error {
 	outputFile := "jadwal.xlsx"
 	f := excelize.NewFile()
 
@@ -332,7 +332,7 @@ func parseJadwal(hari, jam, ruangan, matkulCell, semInfoCell, rawData string) Ja
 	}
 
 	// Parse baris 1: PRODI_NamaMataKuliah
-	prodiRegex := regexp.MustCompile(`^(IF|IUP|RKA|RPL)_(.+)$`)
+	prodiRegex := regexp.MustCompile(`^(IF|IUP|RKA|RPL|S3)_(.+)$`)
 	prodiMatch := prodiRegex.FindStringSubmatch(matkulCell)
 	if len(prodiMatch) == 3 {
 		jadwal.Prodi = prodiMatch[1]

@@ -1514,9 +1514,365 @@
         "sks": "3",
         "raw_data": "RPL_Rekayasa Kebutuhan M\nSem 2 / DO / 3 SKS"
       }
+    ],
+    "S3": [
+      {
+        "hari": "SENIN",
+        "jam": "10.00 - 11.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Pengaman Jaringan B",
+        "semester": "1",
+        "kode_dosen": "TA",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Pengaman Jaringan B\nSem 1 / TA / 3 SKS"
+      },
+      {
+        "hari": "SENIN",
+        "jam": "10.00 - 11.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Mining A",
+        "semester": "1",
+        "kode_dosen": "AM",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Mining A\nSem 1 / AM / 3 SKS"
+      },
+      {
+        "hari": "SELASA",
+        "jam": "10.00 - 11.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Sistem Terdistribusi A",
+        "semester": "1",
+        "kode_dosen": "AM",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Sistem Terdistribusi A\nSem 1 / AM / 3 SKS"
+      },
+      {
+        "hari": "SELASA",
+        "jam": "13.30 - 15.20",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Mining C",
+        "semester": "1",
+        "kode_dosen": "CF, HF",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Mining C\nSem 1 / CF, HF / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "07.00 - 08.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Deret Waktu A",
+        "semester": "1",
+        "kode_dosen": "BA",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Deret Waktu A\nSem 1 / BA / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "07.00 - 08.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Pengaman Jaringan A",
+        "semester": "1",
+        "kode_dosen": "HS, BJ",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Pengaman Jaringan A\nSem 1 / HS, BJ / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "10.00 - 11.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Penulisan Ilmiah A",
+        "semester": "2",
+        "kode_dosen": "HS",
+        "sks": "2",
+        "raw_data": "S3_Penulisan Ilmiah A\nSem 2 / HS / 2 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "10.00 - 11.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Visi Komputer A",
+        "semester": "1",
+        "kode_dosen": "CF, WN",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Visi Komputer A\nSem 1 / CF, WN / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "13.30 - 15.20",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Metode Penelitian A",
+        "semester": "2",
+        "kode_dosen": "ST",
+        "sks": "3",
+        "raw_data": "S3_Metode Penelitian A\nSem 2 / ST / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "07.00 - 08.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Filsafat Ilmu A",
+        "semester": "1",
+        "kode_dosen": "UY",
+        "sks": "3",
+        "raw_data": "S3_Filsafat Ilmu A\nSem 1 / UY / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "07.00 - 08.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Text Mining A",
+        "semester": "1",
+        "kode_dosen": "DP",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Text Mining A\nSem 1 / DP / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "10.00 - 11.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Tata Kelola Teknologi Informasi T",
+        "semester": "1",
+        "kode_dosen": "RS",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Tata Kelola Teknologi Informasi T\nSem 1 / RS / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "10.00 - 11.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Pengaman Jaringan B",
+        "semester": "1",
+        "kode_dosen": "TA",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Pengaman Jaringan B\nSem 1 / TA / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "13.30 - 15.20",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Rekayasa Sistem Berbasis Pengetahuan T",
+        "semester": "1",
+        "kode_dosen": "RS",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Rekayasa Sistem Berbasis Pengetahuan T\nSem 1 / RS / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "09.00 - 10.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Multivariat",
+        "semester": "1",
+        "kode_dosen": "BA",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Multivariat\nSem 1 / BA / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "09.00 - 10.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Forensik Digital A",
+        "semester": "1",
+        "kode_dosen": "HS, BJ",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Forensik Digital A\nSem 1 / HS, BJ / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "09.00 - 10.50",
+        "ruangan": "Lab Pasca Lantai (IF-110) - B\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Mining B",
+        "semester": "1",
+        "kode_dosen": "DP",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Mining B\nSem 1 / DP / 3 SKS"
+      }
     ]
   },
   "jadwal_by_semester": {
+    "1": [
+      {
+        "hari": "SENIN",
+        "jam": "10.00 - 11.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Pengaman Jaringan B",
+        "semester": "1",
+        "kode_dosen": "TA",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Pengaman Jaringan B\nSem 1 / TA / 3 SKS"
+      },
+      {
+        "hari": "SENIN",
+        "jam": "10.00 - 11.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Mining A",
+        "semester": "1",
+        "kode_dosen": "AM",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Mining A\nSem 1 / AM / 3 SKS"
+      },
+      {
+        "hari": "SELASA",
+        "jam": "10.00 - 11.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Sistem Terdistribusi A",
+        "semester": "1",
+        "kode_dosen": "AM",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Sistem Terdistribusi A\nSem 1 / AM / 3 SKS"
+      },
+      {
+        "hari": "SELASA",
+        "jam": "13.30 - 15.20",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Mining C",
+        "semester": "1",
+        "kode_dosen": "CF, HF",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Mining C\nSem 1 / CF, HF / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "07.00 - 08.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Deret Waktu A",
+        "semester": "1",
+        "kode_dosen": "BA",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Deret Waktu A\nSem 1 / BA / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "07.00 - 08.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Pengaman Jaringan A",
+        "semester": "1",
+        "kode_dosen": "HS, BJ",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Pengaman Jaringan A\nSem 1 / HS, BJ / 3 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "10.00 - 11.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Visi Komputer A",
+        "semester": "1",
+        "kode_dosen": "CF, WN",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Visi Komputer A\nSem 1 / CF, WN / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "07.00 - 08.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Filsafat Ilmu A",
+        "semester": "1",
+        "kode_dosen": "UY",
+        "sks": "3",
+        "raw_data": "S3_Filsafat Ilmu A\nSem 1 / UY / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "07.00 - 08.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Text Mining A",
+        "semester": "1",
+        "kode_dosen": "DP",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Text Mining A\nSem 1 / DP / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "10.00 - 11.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Tata Kelola Teknologi Informasi T",
+        "semester": "1",
+        "kode_dosen": "RS",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Tata Kelola Teknologi Informasi T\nSem 1 / RS / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "10.00 - 11.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Pengaman Jaringan B",
+        "semester": "1",
+        "kode_dosen": "TA",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Pengaman Jaringan B\nSem 1 / TA / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "13.30 - 15.20",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Rekayasa Sistem Berbasis Pengetahuan T",
+        "semester": "1",
+        "kode_dosen": "RS",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Rekayasa Sistem Berbasis Pengetahuan T\nSem 1 / RS / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "09.00 - 10.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Multivariat",
+        "semester": "1",
+        "kode_dosen": "BA",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Multivariat\nSem 1 / BA / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "09.00 - 10.50",
+        "ruangan": "Lab Pasca Lantai 1 (IF-110) - A\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Forensik Digital A",
+        "semester": "1",
+        "kode_dosen": "HS, BJ",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Forensik Digital A\nSem 1 / HS, BJ / 3 SKS"
+      },
+      {
+        "hari": "KAMIS",
+        "jam": "09.00 - 10.50",
+        "ruangan": "Lab Pasca Lantai (IF-110) - B\n(Kapasitas 8)",
+        "prodi": "S3",
+        "mata_kuliah": "Topik Dalam Data Mining B",
+        "semester": "1",
+        "kode_dosen": "DP",
+        "sks": "3",
+        "raw_data": "S3_Topik Dalam Data Mining B\nSem 1 / DP / 3 SKS"
+      }
+    ],
     "2": [
       {
         "hari": "SENIN",
@@ -1752,6 +2108,17 @@
       {
         "hari": "RABU",
         "jam": "10.00 - 11.50",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Penulisan Ilmiah A",
+        "semester": "2",
+        "kode_dosen": "HS",
+        "sks": "2",
+        "raw_data": "S3_Penulisan Ilmiah A\nSem 2 / HS / 2 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "10.00 - 11.50",
         "ruangan": "IF-112 (PASCASARJANA)\n(kapasitas 50)",
         "prodi": "IF",
         "mata_kuliah": "Komputasi Numerik E",
@@ -1770,6 +2137,17 @@
         "kode_dosen": "RM",
         "sks": "4",
         "raw_data": "IF_Sistem Operasi A\nSem 2 / RM / 4 SKS"
+      },
+      {
+        "hari": "RABU",
+        "jam": "13.30 - 15.20",
+        "ruangan": "IF-106 (kapasitas 33) / KHUSUS S3",
+        "prodi": "S3",
+        "mata_kuliah": "Metode Penelitian A",
+        "semester": "2",
+        "kode_dosen": "ST",
+        "sks": "3",
+        "raw_data": "S3_Metode Penelitian A\nSem 2 / ST / 3 SKS"
       },
       {
         "hari": "RABU",
