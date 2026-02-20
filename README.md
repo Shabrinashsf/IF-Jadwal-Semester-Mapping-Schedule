@@ -41,9 +41,9 @@ go run main.go
 Aplikasi menghasilkan dua file output:
 
 ### 1. jadwal.json
-File JSON yang berisi data terstruktur dengan dua bagian:
-- **jadwal_by_semester**: Jadwal dikelompokkan per semester
-- **jadwal_by_prodi**: Jadwal dikelompokkan per program studi
+File JSON yang berisi data terstruktur dengan format `{prodi: {semester: [jadwal]}}`
+- Contoh struktur: `{"IF": {"1": [...], "2": [...]}, "S2": {"1": [...]}}`
+- Jadwal dikelompokkan per program studi dan semester
 
 ### 2. jadwal.xlsx
 File Excel dengan multiple sheet, masing-masing sheet berisi:
@@ -68,14 +68,13 @@ Membaca sheet: Jadwal Kuliah
 === SEMUA JADWAL ===
 Total: 24 jadwal ditemukan
 
-=== JADWAL PER SEMESTER ===
-  Semester 1: 6 mata kuliah
-  Semester 3: 9 mata kuliah
-  Semester 5: 9 mata kuliah
-
-=== JADWAL PER PRODI ===
-  IF: 15 mata kuliah
-  RKA: 9 mata kuliah
+=== JADWAL PER PRODI & SEMESTER ===
+  IF:
+    Semester 1: 6 mata kuliah
+    Semester 3: 5 mata kuliah
+  RKA:
+    Semester 1: 4 mata kuliah
+    Semester 3: 4 mata kuliah
 
 ✓ Berhasil export ke jadwal.json
 
@@ -84,7 +83,8 @@ Export jadwal per prodi dan semester...
   ✓ Sheet 'IF_Sem_1' (6 data)
   ✓ Sheet 'IF_Sem_3' (5 data)
   ✓ Sheet 'RKA_Sem_1' (4 data)
-  
+  ✓ Sheet 'RKA_Sem_3' (4 data)
+
 ✓ Berhasil export ke jadwal.xlsx
 ```
 

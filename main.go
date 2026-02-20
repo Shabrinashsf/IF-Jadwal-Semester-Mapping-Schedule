@@ -12,6 +12,18 @@ import (
 	"github.com/xuri/excelize/v2"
 )
 
+type JadwalKuliah struct {
+	Hari       string `json:"hari"`
+	Jam        string `json:"jam"`
+	Ruangan    string `json:"ruangan"`
+	Prodi      string `json:"prodi"`
+	MataKuliah string `json:"mata_kuliah"`
+	Semester   string `json:"semester"`
+	KodeDosen  string `json:"kode_dosen"`
+	SKS        string `json:"sks"`
+	RawData    string `json:"raw_data"`
+}
+
 func main() {
 	// Ganti dengan path file Excel kamu
 	filePath := "data.xlsx"
@@ -42,8 +54,7 @@ func main() {
 
 	// Mapping jadwal
 	var semuaJadwal []JadwalKuliah
-	jadwalBySemester := make(map[string][]JadwalKuliah)
-	jadwalByProdi := make(map[string][]JadwalKuliah)
+	jadwalByProdiSemester := make(map[string]map[string][]JadwalKuliah)
 
 	// Mapping hari
 	hariList := []string{"SENIN", "SELASA", "RABU", "KAMIS", "JUMAT"}
@@ -104,14 +115,12 @@ func main() {
 				if jadwal.MataKuliah != "" {
 					semuaJadwal = append(semuaJadwal, jadwal)
 
-					// Group by semester
-					if jadwal.Semester != "" {
-						jadwalBySemester[jadwal.Semester] = append(jadwalBySemester[jadwal.Semester], jadwal)
-					}
-
-					// Group by prodi
-					if jadwal.Prodi != "" {
-						jadwalByProdi[jadwal.Prodi] = append(jadwalByProdi[jadwal.Prodi], jadwal)
+					// Group by prodi and semester
+					if jadwal.Prodi != "" && jadwal.Semester != "" {
+						if _, ok := jadwalByProdiSemester[jadwal.Prodi]; !ok {
+							jadwalByProdiSemester[jadwal.Prodi] = make(map[string][]JadwalKuliah)
+						}
+						jadwalByProdiSemester[jadwal.Prodi][jadwal.Semester] = append(jadwalByProdiSemester[jadwal.Prodi][jadwal.Semester], jadwal)
 					}
 				}
 			}
@@ -162,14 +171,12 @@ func main() {
 			if jadwal.MataKuliah != "" {
 				semuaJadwal = append(semuaJadwal, jadwal)
 
-				// Group by semester
-				if jadwal.Semester != "" {
-					jadwalBySemester[jadwal.Semester] = append(jadwalBySemester[jadwal.Semester], jadwal)
-				}
-
-				// Group by prodi
-				if jadwal.Prodi != "" {
-					jadwalByProdi[jadwal.Prodi] = append(jadwalByProdi[jadwal.Prodi], jadwal)
+				// Group by prodi and semester
+				if jadwal.Prodi != "" && jadwal.Semester != "" {
+					if _, ok := jadwalByProdiSemester[jadwal.Prodi]; !ok {
+						jadwalByProdiSemester[jadwal.Prodi] = make(map[string][]JadwalKuliah)
+					}
+					jadwalByProdiSemester[jadwal.Prodi][jadwal.Semester] = append(jadwalByProdiSemester[jadwal.Prodi][jadwal.Semester], jadwal)
 				}
 			}
 		}
@@ -179,46 +186,39 @@ func main() {
 	fmt.Println("=== SEMUA JADWAL ===")
 	fmt.Printf("Total: %d jadwal ditemukan\n\n", len(semuaJadwal))
 
-	fmt.Println("=== JADWAL PER SEMESTER ===")
-	for sem, jadwals := range jadwalBySemester {
-		fmt.Printf("  Semester %s: %d mata kuliah\n", sem, len(jadwals))
-	}
-
-	fmt.Println("\n=== JADWAL PER PRODI ===")
-	for prodi, jadwals := range jadwalByProdi {
-		fmt.Printf("  %s: %d mata kuliah\n", prodi, len(jadwals))
+	fmt.Println("=== JADWAL PER PRODI & SEMESTER ===")
+	for prodi, semesters := range jadwalByProdiSemester {
+		fmt.Printf("  %s:\n", prodi)
+		for sem, jadwals := range semesters {
+			fmt.Printf("    Semester %s: %d mata kuliah\n", sem, len(jadwals))
+		}
 	}
 
 	// Export ke JSON file
-	result := map[string]interface{}{
-		"jadwal_by_semester": jadwalBySemester,
-		"jadwal_by_prodi":    jadwalByProdi,
-	}
-
-	jsonData, err := json.MarshalIndent(result, "", "  ")
+	jsonData, err := json.MarshalIndent(jadwalByProdiSemester, "", "  ")
 	if err != nil {
 		log.Fatalf("Gagal convert ke JSON: %v", err)
 	}
 
 	// Simpan ke file
-	outputFile := "jadwal.json"
-	err = os.WriteFile(outputFile, jsonData, 0644)
+	outputFileJSON := "jadwal.json"
+	err = os.WriteFile(outputFileJSON, jsonData, 0644)
 	if err != nil {
 		log.Fatalf("Gagal menulis file: %v", err)
 	}
 
-	fmt.Printf("\n✓ Berhasil export ke %s\n", outputFile)
+	fmt.Printf("\n✓ Berhasil export ke %s\n", outputFileJSON)
 
 	// Export ke file Excel
 	fmt.Println("\n=== EXPORT KE EXCEL ===")
-	err = exportToExcel(jadwalByProdi)
+	err = exportToExcel(jadwalByProdiSemester)
 	if err != nil {
 		log.Fatalf("Gagal export ke Excel: %v", err)
 	}
 }
 
 // exportToExcel menulis data ke file Excel lokal
-func exportToExcel(jadwalByProdi map[string][]JadwalKuliah) error {
+func exportToExcel(jadwalByProdiSemester map[string]map[string][]JadwalKuliah) error {
 	outputFile := "jadwal.xlsx"
 	f := excelize.NewFile()
 
@@ -226,18 +226,6 @@ func exportToExcel(jadwalByProdi map[string][]JadwalKuliah) error {
 
 	// Export jadwal per prodi dan semester
 	fmt.Println("\nExport jadwal per prodi dan semester...")
-	jadwalByProdiSemester := make(map[string]map[string][]JadwalKuliah)
-	for prodi, jadwals := range jadwalByProdi {
-		for _, j := range jadwals {
-			if j.Semester == "" {
-				continue
-			}
-			if _, ok := jadwalByProdiSemester[prodi]; !ok {
-				jadwalByProdiSemester[prodi] = make(map[string][]JadwalKuliah)
-			}
-			jadwalByProdiSemester[prodi][j.Semester] = append(jadwalByProdiSemester[prodi][j.Semester], j)
-		}
-	}
 
 	var prodis []string
 	for prodi := range jadwalByProdiSemester {
