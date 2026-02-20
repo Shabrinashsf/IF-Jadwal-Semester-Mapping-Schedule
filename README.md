@@ -1,14 +1,14 @@
 # IF Jadwal Semester - Mapping Schedule
 
-Aplikasi untuk membaca dan memetakan jadwal kuliah dari file Excel, kemudian mengorganisir dan mengekspor data berdasarkan program studi, semester, dan informasi mata kuliah lainnya.
+Application to read and map course schedules from Excel files, then organize and export data based on study program, semester, and other course information.
 
-## Deskripsi
+## Description
 
-Aplikasi ini membaca file Excel jadwal kuliah (format: `data.xlsx`) dan melakukan:
-- **Parsing**: Mengekstrak informasi jadwal kuliah (hari, jam, ruangan, mata kuliah, semester, dosen, SKS)
-- **Mapping**: Mengelompokkan jadwal berdasarkan semester dan program studi
-- **Validasi**: Memastikan format data sesuai dengan pola yang ditentukan
-- **Ekspor**: Menghasilkan output dalam format JSON dan Excel yang terstruktur
+This application reads an Excel file containing course schedules (format: `data.xlsx`) and performs:
+- **Parsing**: Extracts course schedule information (day, time, room, course, semester, lecturer, credits)
+- **Mapping**: Groups schedules by semester and study program
+- **Validation**: Ensures data format matches the specified patterns
+- **Export**: Generates structured output in JSON and Excel formats
 
 ## Requirements
 
@@ -21,87 +21,87 @@ Aplikasi ini membaca file Excel jadwal kuliah (format: `data.xlsx`) dan melakuka
 go mod tidy
 ```
 
-## Cara Penggunaan
+## Usage
 
-1. Siapkan file Excel `data.xlsx` dengan struktur:
-   - **Baris 1**: Header dengan nama-nama ruangan (misal: IF-101, IF-102, dll)
-   - **Kolom A**: Hari (SENIN, SELASA, RABU, KAMIS, JUMAT)
-   - **Kolom B**: Jam (misal: 07.00 - 07.50)
-   - **Mulai dari Kolom G**: Data mata kuliah dengan format `PRODI_NamaMataKuliah` (baris berikutnya: `Sem X / KODE_DOSEN / SKS`)
+1. Prepare an Excel file `data.xlsx` with the following structure:
+   - **Row 1**: Header with room names (e.g., IF-101, IF-102, etc.)
+   - **Column A**: Day (SENIN, SELASA, RABU, KAMIS, JUMAT)
+   - **Column B**: Time (e.g., 07.00 - 07.50)
+   - **Starting from Column G**: Course data with format `PRODI_CourseName` (next row: `Sem X / LECTURER_CODE / SKS`)
 
-2. Letakkan file `data.xlsx` di folder project
+2. Place the `data.xlsx` file in the project folder
 
-3. Jalankan aplikasi:
+3. Run the application:
 ```bash
 go run main.go
 ```
 
 ## Output
 
-Aplikasi menghasilkan dua file output:
+The application generates two output files:
 
 ### 1. jadwal.json
-File JSON yang berisi data terstruktur dengan format `{prodi: {semester: [jadwal]}}`
-- Contoh struktur: `{"IF": {"1": [...], "2": [...]}, "S2": {"1": [...]}}`
-- Jadwal dikelompokkan per program studi dan semester
+JSON file containing structured data with format `{prodi: {semester: [schedule]}}`
+- Example structure: `{"IF": {"1": [...], "2": [...]}, "S2": {"1": [...]}}`
+- Schedules are grouped by study program and semester
 
 ### 2. jadwal.xlsx
-File Excel dengan multiple sheet, masing-masing sheet berisi:
-- Format nama sheet: `{PRODI}_Sem_{Semester}` (misal: `IF_Sem_1`, `RKA_Sem_3`)
-- Kolom: Hari, Jam, Ruangan, Prodi, Mata Kuliah, Semester, Kode Dosen, SKS
+Excel file with multiple sheets, each sheet containing:
+- Sheet name format: `{PRODI}_Sem_{Semester}` (e.g., `IF_Sem_1`, `RKA_Sem_3`)
+- Columns: Hari (Day), Jam (Time), Ruangan (Room), Prodi (Program), Mata Kuliah (Course), Semester, Kode Dosen (Lecturer Code), SKS (Credits)
 
-## Fitur Utama
+## Key Features
 
-- ✓ Membaca struktur jadwal kompleks dari Excel
-- ✓ Ekstraksi informasi jadwal per mata kuliah (hari, jam, ruangan, dosen, SKS)
-- ✓ Parsing program studi dari nama mata kuliah (IF, IUP, RKA, RPL)
-- ✓ Pembersihan data ruangan (menghapus suffix seperti "a&b")
-- ✓ Pengelompokan otomatis berdasarkan semester dan prodi
-- ✓ Ekspor ke JSON dengan struktur yang terorganisir
-- ✓ Ekspor ke Excel dengan sheet terpisah per prodi/semester
+- ✓ Reads complex schedule structures from Excel
+- ✓ Extracts schedule information per course (day, time, room, lecturer, credits)
+- ✓ Parses study program from course names (IF, IUP, RKA, RPL)
+- ✓ Cleans room data (removes suffixes like "a&b")
+- ✓ Automatic grouping by semester and study program
+- ✓ Export to JSON with organized structure
+- ✓ Export to Excel with separate sheets per program/semester
 
-## Contoh Output Console
+## Console Output Example
 
 ```
-Membaca sheet: Jadwal Kuliah
+Reading sheet: Jadwal Kuliah
 
-=== SEMUA JADWAL ===
-Total: 24 jadwal ditemukan
+=== ALL SCHEDULES ===
+Total: 24 schedules found
 
-=== JADWAL PER PRODI & SEMESTER ===
+=== SCHEDULES BY PROGRAM & SEMESTER ===
   IF:
-    Semester 1: 6 mata kuliah
-    Semester 3: 5 mata kuliah
+    Semester 1: 6 courses
+    Semester 3: 5 courses
   RKA:
-    Semester 1: 4 mata kuliah
-    Semester 3: 4 mata kuliah
+    Semester 1: 4 courses
+    Semester 3: 4 courses
 
-✓ Berhasil export ke jadwal.json
+✓ Successfully exported to jadwal.json
 
-=== EXPORT KE EXCEL ===
-Export jadwal per prodi dan semester...
+=== EXPORT TO EXCEL ===
+Exporting schedules per program and semester...
   ✓ Sheet 'IF_Sem_1' (6 data)
   ✓ Sheet 'IF_Sem_3' (5 data)
   ✓ Sheet 'RKA_Sem_1' (4 data)
   ✓ Sheet 'RKA_Sem_3' (4 data)
 
-✓ Berhasil export ke jadwal.xlsx
+✓ Successfully exported to jadwal.xlsx
 ```
 
-## Struktur Data
+## Data Structure
 
-Setiap jadwal memiliki informasi:
+Each schedule contains the following information:
 ```
-Hari       : SENIN, SELASA, RABU, KAMIS, atau JUMAT
-Jam        : HH.MM - HH.MM (contoh: 07.00 - 07.50)
-Ruangan    : Kode ruangan (contoh: IF-101, IF-AV)
-Prodi      : Program studi (IF, IUP, RKA, RPL)
-Mata Kuliah: Nama mata kuliah
+Hari       : SENIN, SELASA, RABU, KAMIS, or JUMAT
+Jam        : HH.MM - HH.MM (e.g., 07.00 - 07.50)
+Ruangan    : Room code (e.g., IF-101, IF-AV)
+Prodi      : Study program (IF, IUP, RKA, RPL)
+Mata Kuliah: Course name
 Semester   : 1-8
-Kode Dosen : Inisial dosen (2 huruf)
-SKS        : Jumlah satuan kredit semester
+Kode Dosen : Lecturer initials (2 letters)
+SKS        : Credit units
 ```
 
-## Library Utama
+## Main Library
 
-- [excelize](https://github.com/xuri/excelize) - Library Go untuk membaca & menulis file Excel (.xlsx)
+- [excelize](https://github.com/xuri/excelize) - Go library for reading & writing Excel files (.xlsx)
